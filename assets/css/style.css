@@ -1,0 +1,26 @@
+/* Custom CSS for India.gg */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  color: #ff4500;
+}
+
+header {
+  background-color: #333333;
+  border-bottom: 3px solid #ff4500;
+}
+
+footer {
+  background-color: #333333;
+  border-top: 3px solid #ff4500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff4500;
+}
