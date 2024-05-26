@@ -1,24 +1,52 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "India.gg"
+description: "Your daily dose of Indian games and its news"
+theme: minima
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.india.gg" # the base hostname & protocol for your site
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-theme: "minima"
+# Author settings
+author:
+  name: "Subhash"
+  email: "subhashdasyam@users.noreply.github.com"
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Minima theme settings
+minima:
+  social_links:
+    twitter: soon
+    github: soon
+    # Add more social links as needed
+
+# Default settings
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: post
+    values:
+      layout: "post"
+      tags: Other
+
+# Build settings
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 
 rss: rss
 
@@ -26,17 +54,8 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
     
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
 titles_from_headings:
   strip_title: true
   collections: true
 
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
+
